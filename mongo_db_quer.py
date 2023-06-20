@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 
 #uri = "mongodb://localhost:27017/?retryWrites=true&w=majority"
-uri = "https://protect-de.mimecast.com/s/8Co2CDqXDoSjAoVoxsWAeHq" mongo uri
+uri = "https://protect-de.mimecast.com/s/8PsfCBrVAmSPKJv46izyKuU"
 # Create a new client and connect to the server
 client = MongoClient(uri)
 # Send a ping to confirm a successful connection
@@ -17,8 +17,8 @@ try:
 except Exception as e:
     print(e)
 
-mydb = client["mongo db name"]
-mycol = mydb[" collection name"]
+mydb = client["Capstone3"]
+mycol = mydb["Cars"]
 # load_dotenv(verbose=True)
 
 total_count = mycol.count_documents({})
@@ -97,7 +97,7 @@ Owner_qry = [
   {
     "$group": {
       "_id": "$owner",
-      "count": { "$sum": { "$cond": [{ "$eq": ["$sold", 'y'] }, 1, 0] } }
+      "count": { "$sum": { "$cond": [{ "$eq": ["$sold", 'Y'] }, 1, 0] } }
     }
   },
   {
@@ -190,7 +190,7 @@ owner_qry = [
     "$group": {
       "_id": {
         "car1": "$owner",
-        "car": "$sold "
+        "car": "$sold"
       },
       "total": {
         "$sum": 1
@@ -239,10 +239,10 @@ owner_qry = [
   }
 ]
 
+
 results = mycol.aggregate(owner_qry)
 
 print("owner\t|carssold(Y/N)\t|Count\t|Percentage")
 
 for cust in results:
     print("{}\t|{}\t|{}\t|{}".format(cust['_id']['car1'], cust['_id']['car'], cust['count'], cust['percentage']))
-
