@@ -1,0 +1,187 @@
+s Map()
+23/06/20 14:22:49 INFO BlockManagerInfo: Added broadcast_64_piece0 in memory on ip-172-31-23-181.ec2.internal:46421 (size: 5.9 KiB, free: 12.2 GiB)
+23/06/20 14:22:49 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 19 to 172.31.23.181:58564
+23/06/20 14:22:49 INFO TaskSetManager: Finished task 0.0 in stage 63.0 (TID 42) in 21 ms on ip-172-31-23-181.ec2.internal (executor 1) (1/1)
+23/06/20 14:22:49 INFO YarnScheduler: Removed TaskSet 63.0, whose tasks have all completed, from pool 
+23/06/20 14:22:49 INFO DAGScheduler: ResultStage 63 (count at <unknown>:0) finished in 0.027 s
+23/06/20 14:22:49 INFO DAGScheduler: Job 42 is finished. Cancelling potential speculative or zombie tasks for this job
+23/06/20 14:22:49 INFO YarnScheduler: Killing all running tasks in stage 63: Stage finished
+23/06/20 14:22:49 INFO DAGScheduler: Job 42 finished: count at <unknown>:0, took 0.031031 s
+23/06/20 14:22:49 INFO FileSourceStrategy: Pushed Filters: 
+23/06/20 14:22:49 INFO FileSourceStrategy: Post-Scan Filters: 
+23/06/20 14:22:49 INFO FileSourceStrategy: Output Data Schema: struct<Sales_ID: int, name: string, year: int, selling_price: int, km_driven: int ... 16 more fields>
+23/06/20 14:22:49 INFO CodeGenerator: Code generated in 16.462143 ms
+23/06/20 14:22:49 INFO MemoryStore: Block broadcast_65 stored as values in memory (estimated size 425.4 KiB, free 907.8 MiB)
+23/06/20 14:22:49 INFO MemoryStore: Block broadcast_65_piece0 stored as bytes in memory (estimated size 42.5 KiB, free 907.7 MiB)
+23/06/20 14:22:49 INFO BlockManagerInfo: Added broadcast_65_piece0 in memory on ip-172-31-27-212.ec2.internal:39651 (size: 42.5 KiB, free: 911.8 MiB)
+23/06/20 14:22:49 INFO SparkContext: Created broadcast 65 from showString at NativeMethodAccessorImpl.java:0
+23/06/20 14:22:49 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes, number of split files: 1, prefetch: false
+23/06/20 14:22:49 INFO FileSourceScanExec: relation: None, fileSplitsInPartitionHistogram: Vector((1 fileSplits,1))
+23/06/20 14:22:49 INFO SparkContext: Starting job: showString at NativeMethodAccessorImpl.java:0
+23/06/20 14:22:49 INFO DAGScheduler: Got job 43 (showString at NativeMethodAccessorImpl.java:0) with 1 output partitions
+23/06/20 14:22:49 INFO DAGScheduler: Final stage: ResultStage 64 (showString at NativeMethodAccessorImpl.java:0)
+23/06/20 14:22:49 INFO DAGScheduler: Parents of final stage: List()
+23/06/20 14:22:49 INFO DAGScheduler: Missing parents: List()
+23/06/20 14:22:49 INFO DAGScheduler: Submitting ResultStage 64 (MapPartitionsRDD[153] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+23/06/20 14:22:49 INFO MemoryStore: Block broadcast_66 stored as values in memory (estimated size 25.5 KiB, free 907.7 MiB)
+23/06/20 14:22:49 INFO MemoryStore: Block broadcast_66_piece0 stored as bytes in memory (estimated size 10.6 KiB, free 907.7 MiB)
+23/06/20 14:22:49 INFO BlockManagerInfo: Added broadcast_66_piece0 in memory on ip-172-31-27-212.ec2.internal:39651 (size: 10.6 KiB, free: 911.8 MiB)
+23/06/20 14:22:49 INFO SparkContext: Created broadcast 66 from broadcast at DAGScheduler.scala:1570
+23/06/20 14:22:49 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 64 (MapPartitionsRDD[153] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+23/06/20 14:22:49 INFO YarnScheduler: Adding task set 64.0 with 1 tasks resource profile 0
+23/06/20 14:22:49 INFO TaskSetManager: Starting task 0.0 in stage 64.0 (TID 43) (ip-172-31-31-131.ec2.internal, executor 2, partition 0, RACK_LOCAL, 5076 bytes) taskResourceAssignments Map()
+23/06/20 14:22:49 INFO BlockManagerInfo: Added broadcast_66_piece0 in memory on ip-172-31-31-131.ec2.internal:39993 (size: 10.6 KiB, free: 12.2 GiB)
+23/06/20 14:22:49 INFO BlockManagerInfo: Added broadcast_65_piece0 in memory on ip-172-31-31-131.ec2.internal:39993 (size: 42.5 KiB, free: 12.2 GiB)
+23/06/20 14:22:49 INFO TaskSetManager: Finished task 0.0 in stage 64.0 (TID 43) in 118 ms on ip-172-31-31-131.ec2.internal (executor 2) (1/1)
+23/06/20 14:22:49 INFO YarnScheduler: Removed TaskSet 64.0, whose tasks have all completed, from pool 
+23/06/20 14:22:49 INFO DAGScheduler: ResultStage 64 (showString at NativeMethodAccessorImpl.java:0) finished in 0.126 s
+23/06/20 14:22:49 INFO DAGScheduler: Job 43 is finished. Cancelling potential speculative or zombie tasks for this job
+23/06/20 14:22:49 INFO YarnScheduler: Killing all running tasks in stage 64: Stage finished
+23/06/20 14:22:49 INFO DAGScheduler: Job 43 finished: showString at NativeMethodAccessorImpl.java:0, took 0.128834 s
+23/06/20 14:22:49 INFO CodeGenerator: Code generated in 18.075274 ms
++--------+--------------------+----+-------------+---------+-------+--------------------+-------------+------+-----------+------------+------------+----------+-------+----------+--------------------+-----+----+-------+
+|Sales_ID|                name|year|selling_price|km_driven| Region|   State or Province|         City|  fuel|seller_type|transmission|       owner|   mileage| engine| max_power|              torque|seats|sold|age_car|
++--------+--------------------+----+-------------+---------+-------+--------------------+-------------+------+-----------+------------+------------+----------+-------+----------+--------------------+-----+----+-------+
+|       1|Maruti Swift Dzir...|2014|       450000|   145500|   East|District of Columbia|   Washington|Diesel| Individual|      Manual| First Owner| 23.4 kmpl|1248 CC|    74 bhp|      190Nm@ 2000rpm|    5|   Y|      9|
+|       2|Skoda Rapid 1.5 T...|2014|       370000|   120000|   East|            New York|New York City|Diesel| Individual|      Manual|Second Owner|21.14 kmpl|1498 CC|103.52 bhp| 250Nm@ 1500-2500rpm|    5|   Y|      9|
+|       3|Honda City 2017-2...|2006|       158000|   140000|Central|            Illinois|      Chicago|Petrol| Individual|      Manual| Third Owner| 17.7 kmpl|1497 CC|    78 bhp|12.7@ 2,700(kgm@ ...|    5|   Y|     17|
+|       4|Hyundai i20 Sport...|2010|       225000|   127000|Central|            Illinois|      Chicago|Diesel| Individual|      Manual| First Owner| 23.0 kmpl|1396 CC|    90 bhp|22.4 kgm at 1750-...|    5|   Y|     13|
+|       5|Maruti Swift VXI ...|2007|       130000|   120000|   East|            New York|New York City|Petrol| Individual|      Manual| First Owner| 16.1 kmpl|1298 CC|  88.2 bhp|11.5@ 4,500(kgm@ ...|    5|   Y|     16|
+|       6|Hyundai Xcent 1.2...|2017|       440000|    45000|   East|            New York|New York City|Petrol| Individual|      Manual| First Owner|20.14 kmpl|1197 CC| 81.86 bhp|   113.75nm@ 4000rpm|    5|   Y|      6|
+|       7|Maruti Wagon R LX...|2007|        96000|   175000|   West|          California|  Los Angeles|   LPG| Individual|      Manual| First Owner|17.3 km/kg|1061 CC|  57.5 bhp|7.8@ 4,500(kgm@ rpm)|    5|   Y|     16|
+|       8|  Maruti 800 DX BSII|2001|        45000|     5000|   West|          California|  Los Angeles|Petrol| Individual|      Manual|Second Owner| 16.1 kmpl| 796 CC|    37 bhp|       59Nm@ 2500rpm|    4|   Y|     22|
+|       9|    Toyota Etios VXD|2011|       350000|    90000|   West|          California|  Los Angeles|Diesel| Individual|      Manual| First Owner|23.59 kmpl|1364 CC|  67.1 bhp| 170Nm@ 1800-2400rpm|    5|   Y|     12|
+|      10|Ford Figo Diesel ...|2013|       200000|   169000|Central|               Texas|      Houston|Diesel| Individual|      Manual| First Owner| 20.0 kmpl|1399 CC|  68.1 bhp|      160Nm@ 2000rpm|    5|   Y|     10|
+|      11|Renault Duster 11...|2014|       500000|    68000|   East|            New York|New York City|Diesel| Individual|      Manual|Second Owner|19.01 kmpl|1461 CC|108.45 bhp|      248Nm@ 2250rpm|    5|   Y|      9|
+|      12|       Maruti Zen LX|2005|        92000|   100000|Central|               Texas|      Houston|Petrol| Individual|      Manual|Second Owner| 17.3 kmpl| 993 CC|    60 bhp|       78Nm@ 4500rpm|    5|   Y|     18|
+|      13|Maruti Swift Dzir...|2009|       280000|   140000|Central|               Texas|      Houston|Diesel| Individual|      Manual|Second Owner| 19.3 kmpl|1248 CC|  73.9 bhp|      190Nm@ 2000rpm|    5|   Y|     14|
+|      15|Maruti Wagon R LX...|2009|       180000|    90000|   East|       Massachusetts|       Boston|Petrol| Individual|      Manual|Second Owner| 18.9 kmpl|1061 CC|    67 bhp|       84Nm@ 3500rpm|    5|   Y|     14|
+|      16|Mahindra KUV 100 ...|2016|       400000|    40000|   East|       Massachusetts|       Boston|Petrol| Individual|      Manual| First Owner|18.15 kmpl|1198 CC|    82 bhp| 115Nm@ 3500-3600rpm|    5|   Y|      7|
+|      17|Maruti Ertiga SHV...|2016|       778000|    70000|Central|               Texas|       Dallas|Diesel| Individual|      Manual|Second Owner|24.52 kmpl|1248 CC|  88.5 bhp|      200Nm@ 1750rpm|    7|   Y|      7|
+|      18|Hyundai i20 1.4 C...|2012|       500000|    53000|Central|               Texas|       Dallas|Diesel| Individual|      Manual|Second Owner| 23.0 kmpl|1396 CC|    90 bhp|22.4 kgm at 1750-...|    5|   Y|     11|
+|      19|      Maruti Alto LX|2002|       150000|    80000|Central|               Texas|       Dallas|Petrol| Individual|      Manual|Second Owner| 19.7 kmpl| 796 CC|  46.3 bhp|       62Nm@ 3000rpm|    5|   Y|     21|
+|      20|Hyundai i20 2015-...|2016|       680000|   100000|   East|            New York|New York City|Diesel| Individual|      Manual| First Owner|22.54 kmpl|1396 CC| 88.73 bhp|219.7Nm@ 1500-275...|    5|   Y|      7|
+|      21|Mahindra Verito 1...|2011|       174000|   100000|   East|            New York|New York City|Diesel| Individual|      Manual|Second Owner| 21.0 kmpl|1461 CC|  64.1 bhp|      160Nm@ 2000rpm|    5|   Y|     12|
++--------+--------------------+----+-------------+---------+-------+--------------------+-------------+------+-----------+------------+------------+----------+-------+----------+--------------------+-----+----+-------+
+only showing top 20 rows
+
+23/06/20 14:22:49 INFO FileSourceStrategy: Pushed Filters: 
+23/06/20 14:22:49 INFO FileSourceStrategy: Post-Scan Filters: 
+23/06/20 14:22:49 INFO FileSourceStrategy: Output Data Schema: struct<Sales_ID: int, name: string, year: int, selling_price: int, km_driven: int ... 16 more fields>
+23/06/20 14:22:49 INFO CodeGenerator: Code generated in 19.661476 ms
+23/06/20 14:22:49 INFO MemoryStore: Block broadcast_67 stored as values in memory (estimated size 425.4 KiB, free 907.3 MiB)
+23/06/20 14:22:49 INFO MemoryStore: Block broadcast_67_piece0 stored as bytes in memory (estimated size 42.5 KiB, free 907.3 MiB)
+23/06/20 14:22:49 INFO BlockManagerInfo: Added broadcast_67_piece0 in memory on ip-172-31-27-212.ec2.internal:39651 (size: 42.5 KiB, free: 911.7 MiB)
+23/06/20 14:22:49 INFO SparkContext: Created broadcast 67 from showString at NativeMethodAccessorImpl.java:0
+23/06/20 14:22:49 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes, number of split files: 1, prefetch: false
+23/06/20 14:22:49 INFO FileSourceScanExec: relation: None, fileSplitsInPartitionHistogram: Vector((1 fileSplits,1))
+23/06/20 14:22:49 INFO SparkContext: Starting job: showString at NativeMethodAccessorImpl.java:0
+23/06/20 14:22:49 INFO DAGScheduler: Got job 44 (showString at NativeMethodAccessorImpl.java:0) with 1 output partitions
+23/06/20 14:22:49 INFO DAGScheduler: Final stage: ResultStage 65 (showString at NativeMethodAccessorImpl.java:0)
+23/06/20 14:22:49 INFO DAGScheduler: Parents of final stage: List()
+23/06/20 14:22:49 INFO DAGScheduler: Missing parents: List()
+23/06/20 14:22:49 INFO DAGScheduler: Submitting ResultStage 65 (MapPartitionsRDD[157] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+23/06/20 14:22:49 INFO MemoryStore: Block broadcast_68 stored as values in memory (estimated size 27.9 KiB, free 907.2 MiB)
+23/06/20 14:22:49 INFO MemoryStore: Block broadcast_68_piece0 stored as bytes in memory (estimated size 11.2 KiB, free 907.2 MiB)
+23/06/20 14:22:49 INFO BlockManagerInfo: Added broadcast_68_piece0 in memory on ip-172-31-27-212.ec2.internal:39651 (size: 11.2 KiB, free: 911.7 MiB)
+23/06/20 14:22:49 INFO SparkContext: Created broadcast 68 from broadcast at DAGScheduler.scala:1570
+23/06/20 14:22:49 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 65 (MapPartitionsRDD[157] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+23/06/20 14:22:49 INFO YarnScheduler: Adding task set 65.0 with 1 tasks resource profile 0
+23/06/20 14:22:49 INFO TaskSetManager: Starting task 0.0 in stage 65.0 (TID 44) (ip-172-31-23-181.ec2.internal, executor 1, partition 0, RACK_LOCAL, 5076 bytes) taskResourceAssignments Map()
+23/06/20 14:22:49 INFO BlockManagerInfo: Added broadcast_68_piece0 in memory on ip-172-31-23-181.ec2.internal:46421 (size: 11.2 KiB, free: 12.2 GiB)
+23/06/20 14:22:49 INFO BlockManagerInfo: Added broadcast_67_piece0 in memory on ip-172-31-23-181.ec2.internal:46421 (size: 42.5 KiB, free: 12.2 GiB)
+23/06/20 14:22:50 INFO TaskSetManager: Finished task 0.0 in stage 65.0 (TID 44) in 174 ms on ip-172-31-23-181.ec2.internal (executor 1) (1/1)
+23/06/20 14:22:50 INFO YarnScheduler: Removed TaskSet 65.0, whose tasks have all completed, from pool 
+23/06/20 14:22:50 INFO DAGScheduler: ResultStage 65 (showString at NativeMethodAccessorImpl.java:0) finished in 0.181 s
+23/06/20 14:22:50 INFO DAGScheduler: Job 44 is finished. Cancelling potential speculative or zombie tasks for this job
+23/06/20 14:22:50 INFO YarnScheduler: Killing all running tasks in stage 65: Stage finished
+23/06/20 14:22:50 INFO DAGScheduler: Job 44 finished: showString at NativeMethodAccessorImpl.java:0, took 0.183438 s
+23/06/20 14:22:50 INFO CodeGenerator: Code generated in 17.666904 ms
++--------+--------------------+----+-------------+---------+-------+--------------------+-------------+------+-----------+------------+------------+----------+-------+----------+--------------------+-----+----+-------+---------+
+|Sales_ID|                name|year|selling_price|km_driven| Region|   State or Province|         City|  fuel|seller_type|transmission|       owner|   mileage| engine| max_power|              torque|seats|sold|age_car|owner_cln|
++--------+--------------------+----+-------------+---------+-------+--------------------+-------------+------+-----------+------------+------------+----------+-------+----------+--------------------+-----+----+-------+---------+
+|       1|Maruti Swift Dzir...|2014|       450000|   145500|   East|District of Columbia|   Washington|Diesel| Individual|      Manual| First Owner| 23.4 kmpl|1248 CC|    74 bhp|      190Nm@ 2000rpm|    5|   Y|      9|        1|
+|       2|Skoda Rapid 1.5 T...|2014|       370000|   120000|   East|            New York|New York City|Diesel| Individual|      Manual|Second Owner|21.14 kmpl|1498 CC|103.52 bhp| 250Nm@ 1500-2500rpm|    5|   Y|      9|        2|
+|       3|Honda City 2017-2...|2006|       158000|   140000|Central|            Illinois|      Chicago|Petrol| Individual|      Manual| Third Owner| 17.7 kmpl|1497 CC|    78 bhp|12.7@ 2,700(kgm@ ...|    5|   Y|     17|        3|
+|       4|Hyundai i20 Sport...|2010|       225000|   127000|Central|            Illinois|      Chicago|Diesel| Individual|      Manual| First Owner| 23.0 kmpl|1396 CC|    90 bhp|22.4 kgm at 1750-...|    5|   Y|     13|        1|
+|       5|Maruti Swift VXI ...|2007|       130000|   120000|   East|            New York|New York City|Petrol| Individual|      Manual| First Owner| 16.1 kmpl|1298 CC|  88.2 bhp|11.5@ 4,500(kgm@ ...|    5|   Y|     16|        1|
+|       6|Hyundai Xcent 1.2...|2017|       440000|    45000|   East|            New York|New York City|Petrol| Individual|      Manual| First Owner|20.14 kmpl|1197 CC| 81.86 bhp|   113.75nm@ 4000rpm|    5|   Y|      6|        1|
+|       7|Maruti Wagon R LX...|2007|        96000|   175000|   West|          California|  Los Angeles|   LPG| Individual|      Manual| First Owner|17.3 km/kg|1061 CC|  57.5 bhp|7.8@ 4,500(kgm@ rpm)|    5|   Y|     16|        1|
+|       8|  Maruti 800 DX BSII|2001|        45000|     5000|   West|          California|  Los Angeles|Petrol| Individual|      Manual|Second Owner| 16.1 kmpl| 796 CC|    37 bhp|       59Nm@ 2500rpm|    4|   Y|     22|        2|
+|       9|    Toyota Etios VXD|2011|       350000|    90000|   West|          California|  Los Angeles|Diesel| Individual|      Manual| First Owner|23.59 kmpl|1364 CC|  67.1 bhp| 170Nm@ 1800-2400rpm|    5|   Y|     12|        1|
+|      10|Ford Figo Diesel ...|2013|       200000|   169000|Central|               Texas|      Houston|Diesel| Individual|      Manual| First Owner| 20.0 kmpl|1399 CC|  68.1 bhp|      160Nm@ 2000rpm|    5|   Y|     10|        1|
+|      11|Renault Duster 11...|2014|       500000|    68000|   East|            New York|New York City|Diesel| Individual|      Manual|Second Owner|19.01 kmpl|1461 CC|108.45 bhp|      248Nm@ 2250rpm|    5|   Y|      9|        2|
+|      12|       Maruti Zen LX|2005|        92000|   100000|Central|               Texas|      Houston|Petrol| Individual|      Manual|Second Owner| 17.3 kmpl| 993 CC|    60 bhp|       78Nm@ 4500rpm|    5|   Y|     18|        2|
+|      13|Maruti Swift Dzir...|2009|       280000|   140000|Central|               Texas|      Houston|Diesel| Individual|      Manual|Second Owner| 19.3 kmpl|1248 CC|  73.9 bhp|      190Nm@ 2000rpm|    5|   Y|     14|        2|
+|      15|Maruti Wagon R LX...|2009|       180000|    90000|   East|       Massachusetts|       Boston|Petrol| Individual|      Manual|Second Owner| 18.9 kmpl|1061 CC|    67 bhp|       84Nm@ 3500rpm|    5|   Y|     14|        2|
+|      16|Mahindra KUV 100 ...|2016|       400000|    40000|   East|       Massachusetts|       Boston|Petrol| Individual|      Manual| First Owner|18.15 kmpl|1198 CC|    82 bhp| 115Nm@ 3500-3600rpm|    5|   Y|      7|        1|
+|      17|Maruti Ertiga SHV...|2016|       778000|    70000|Central|               Texas|       Dallas|Diesel| Individual|      Manual|Second Owner|24.52 kmpl|1248 CC|  88.5 bhp|      200Nm@ 1750rpm|    7|   Y|      7|        2|
+|      18|Hyundai i20 1.4 C...|2012|       500000|    53000|Central|               Texas|       Dallas|Diesel| Individual|      Manual|Second Owner| 23.0 kmpl|1396 CC|    90 bhp|22.4 kgm at 1750-...|    5|   Y|     11|        2|
+|      19|      Maruti Alto LX|2002|       150000|    80000|Central|               Texas|       Dallas|Petrol| Individual|      Manual|Second Owner| 19.7 kmpl| 796 CC|  46.3 bhp|       62Nm@ 3000rpm|    5|   Y|     21|        2|
+|      20|Hyundai i20 2015-...|2016|       680000|   100000|   East|            New York|New York City|Diesel| Individual|      Manual| First Owner|22.54 kmpl|1396 CC| 88.73 bhp|219.7Nm@ 1500-275...|    5|   Y|      7|        1|
+|      21|Mahindra Verito 1...|2011|       174000|   100000|   East|            New York|New York City|Diesel| Individual|      Manual|Second Owner| 21.0 kmpl|1461 CC|  64.1 bhp|      160Nm@ 2000rpm|    5|   Y|     12|        2|
++--------+--------------------+----+-------------+---------+-------+--------------------+-------------+------+-----------+------------+------------+----------+-------+----------+--------------------+-----+----+-------+---------+
+only showing top 20 rows
+
+23/06/20 14:22:50 INFO FileSourceStrategy: Pushed Filters: 
+23/06/20 14:22:50 INFO FileSourceStrategy: Post-Scan Filters: 
+23/06/20 14:22:50 INFO FileSourceStrategy: Output Data Schema: struct<Sales_ID: int, name: string, year: int, selling_price: int, km_driven: int ... 16 more fields>
+23/06/20 14:22:50 INFO ParquetFileFormat: Using user defined output committer for Parquet: com.amazon.emr.committer.EmrOptimizedSparkSqlParquetOutputCommitter
+23/06/20 14:22:50 INFO SQLConfCommitterProvider: Getting user defined output committer class com.amazon.emr.committer.EmrOptimizedSparkSqlParquetOutputCommitter
+23/06/20 14:22:50 INFO EmrOptimizedParquetOutputCommitter: EMR Optimized Committer: ENABLED
+23/06/20 14:22:50 INFO EmrOptimizedParquetOutputCommitter: Using output committer class org.apache.hadoop.mapreduce.lib.output.FileSystemOptimizedCommitter
+23/06/20 14:22:50 INFO FileOutputCommitter: File Output Committer Algorithm version is 2
+23/06/20 14:22:50 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: true
+23/06/20 14:22:50 INFO FileOutputCommitter: File Output Committer Algorithm version is 2
+23/06/20 14:22:50 INFO FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: true
+23/06/20 14:22:50 INFO SQLConfCommitterProvider: Using output committer class com.amazon.emr.committer.EmrOptimizedSparkSqlParquetOutputCommitter
+23/06/20 14:22:50 INFO FileSystemOptimizedCommitter: Nothing to setup as successful task attempt outputs are written directly
+23/06/20 14:22:50 INFO CodeGenerator: Code generated in 17.173025 ms
+23/06/20 14:22:50 INFO MemoryStore: Block broadcast_69 stored as values in memory (estimated size 425.4 KiB, free 906.8 MiB)
+23/06/20 14:22:50 INFO MemoryStore: Block broadcast_69_piece0 stored as bytes in memory (estimated size 42.5 KiB, free 906.8 MiB)
+23/06/20 14:22:50 INFO BlockManagerInfo: Added broadcast_69_piece0 in memory on ip-172-31-27-212.ec2.internal:39651 (size: 42.5 KiB, free: 911.7 MiB)
+23/06/20 14:22:50 INFO SparkContext: Created broadcast 69 from parquet at NativeMethodAccessorImpl.java:0
+23/06/20 14:22:50 INFO FileSourceScanExec: Planning scan with bin packing, max size: 4194304 bytes, open cost is considered as scanning 4194304 bytes, number of split files: 1, prefetch: false
+23/06/20 14:22:50 INFO FileSourceScanExec: relation: None, fileSplitsInPartitionHistogram: Vector((1 fileSplits,1))
+23/06/20 14:22:50 INFO SparkContext: Starting job: parquet at NativeMethodAccessorImpl.java:0
+23/06/20 14:22:50 INFO DAGScheduler: Got job 45 (parquet at NativeMethodAccessorImpl.java:0) with 1 output partitions
+23/06/20 14:22:50 INFO DAGScheduler: Final stage: ResultStage 66 (parquet at NativeMethodAccessorImpl.java:0)
+23/06/20 14:22:50 INFO DAGScheduler: Parents of final stage: List()
+23/06/20 14:22:50 INFO DAGScheduler: Missing parents: List()
+23/06/20 14:22:50 INFO DAGScheduler: Submitting ResultStage 66 (MapPartitionsRDD[160] at parquet at NativeMethodAccessorImpl.java:0), which has no missing parents
+23/06/20 14:22:50 INFO MemoryStore: Block broadcast_70 stored as values in memory (estimated size 266.6 KiB, free 906.5 MiB)
+23/06/20 14:22:50 INFO MemoryStore: Block broadcast_70_piece0 stored as bytes in memory (estimated size 99.0 KiB, free 906.4 MiB)
+23/06/20 14:22:50 INFO BlockManagerInfo: Added broadcast_70_piece0 in memory on ip-172-31-27-212.ec2.internal:39651 (size: 99.0 KiB, free: 911.6 MiB)
+23/06/20 14:22:50 INFO SparkContext: Created broadcast 70 from broadcast at DAGScheduler.scala:1570
+23/06/20 14:22:50 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 66 (MapPartitionsRDD[160] at parquet at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+23/06/20 14:22:50 INFO YarnScheduler: Adding task set 66.0 with 1 tasks resource profile 0
+23/06/20 14:22:50 INFO TaskSetManager: Starting task 0.0 in stage 66.0 (TID 45) (ip-172-31-23-181.ec2.internal, executor 1, partition 0, RACK_LOCAL, 5076 bytes) taskResourceAssignments Map()
+23/06/20 14:22:50 INFO BlockManagerInfo: Added broadcast_70_piece0 in memory on ip-172-31-23-181.ec2.internal:46421 (size: 99.0 KiB, free: 12.2 GiB)
+23/06/20 14:22:51 INFO BlockManagerInfo: Added broadcast_69_piece0 in memory on ip-172-31-23-181.ec2.internal:46421 (size: 42.5 KiB, free: 12.2 GiB)
+23/06/20 14:22:53 INFO TaskSetManager: Finished task 0.0 in stage 66.0 (TID 45) in 2774 ms on ip-172-31-23-181.ec2.internal (executor 1) (1/1)
+23/06/20 14:22:53 INFO YarnScheduler: Removed TaskSet 66.0, whose tasks have all completed, from pool 
+23/06/20 14:22:53 INFO DAGScheduler: ResultStage 66 (parquet at NativeMethodAccessorImpl.java:0) finished in 2.799 s
+23/06/20 14:22:53 INFO DAGScheduler: Job 45 is finished. Cancelling potential speculative or zombie tasks for this job
+23/06/20 14:22:53 INFO YarnScheduler: Killing all running tasks in stage 66: Stage finished
+23/06/20 14:22:53 INFO DAGScheduler: Job 45 finished: parquet at NativeMethodAccessorImpl.java:0, took 2.801243 s
+23/06/20 14:22:53 INFO FileFormatWriter: Start to commit write Job f7820f5c-0fd3-4bb3-8c0e-4020f32fa600.
+23/06/20 14:22:53 INFO MultipartUploadOutputStream: close closed:false s3://ml-3-s3-bucket-jyoti/curateddata/spark/car_analysis.parquet/_SUCCESS
+23/06/20 14:22:53 INFO FileFormatWriter: Write Job f7820f5c-0fd3-4bb3-8c0e-4020f32fa600 committed. Elapsed time: 100 ms.
+23/06/20 14:22:53 INFO FileFormatWriter: Finished processing stats for write job f7820f5c-0fd3-4bb3-8c0e-4020f32fa600.
+23/06/20 14:22:53 INFO SparkContext: Invoking stop() from shutdown hook
+23/06/20 14:22:53 INFO SparkUI: Stopped Spark web UI at http://ip-172-31-27-212.ec2.internal:4040
+23/06/20 14:22:53 INFO YarnClientSchedulerBackend: Interrupting monitor thread
+23/06/20 14:22:53 INFO YarnClientSchedulerBackend: Shutting down all executors
+23/06/20 14:22:53 INFO YarnSchedulerBackend$YarnDriverEndpoint: Asking each executor to shut down
+23/06/20 14:22:53 INFO YarnClientSchedulerBackend: YARN client scheduler backend Stopped
+23/06/20 14:22:53 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+23/06/20 14:22:53 INFO MemoryStore: MemoryStore cleared
+23/06/20 14:22:53 INFO BlockManager: BlockManager stopped
+23/06/20 14:22:53 INFO BlockManagerMaster: BlockManagerMaster stopped
+23/06/20 14:22:53 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+23/06/20 14:22:53 INFO SparkContext: Successfully stopped SparkContext
+23/06/20 14:22:53 INFO ShutdownHookManager: Shutdown hook called
+23/06/20 14:22:53 INFO ShutdownHookManager: Deleting directory /mnt/tmp/spark-bef2ad17-5879-4d88-b394-0668a8649505/pyspark-f9c9a02f-cf4b-4090-838f-d9c007a6b270
+23/06/20 14:22:53 INFO ShutdownHookManager: Deleting directory /mnt/tmp/spark-bef2ad17-5879-4d88-b394-0668a8649505
+23/06/20 14:22:53 INFO ShutdownHookManager: Deleting directory /mnt/tmp/spark-c14f84bf-9d97-436f-af63-87ae6ef12d19
+[hadoop@ip-172-31-27-212 ML_3.0_git_repo_jyoti]$ 
