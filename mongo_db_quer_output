@@ -1,0 +1,52 @@
+C:\AllMyFiles\CodingWork\pythonProjectMongo\venv\Scripts\python.exe C:\AllMyFiles\CodingWork\pythonProjectMongo\Cars2.py 
+Pinged your deployment. You successfully connected to MongoDB!
+Total number of documents : 7906
+Cars Sold Analysis
+CarsSold	Count	Percentage
+Y	2000	25.2972%
+N	5906	74.7028%
+
+
+
+Owner types
+Owner	Count	Percentage
+Second Owner	2016	25.4996%
+Fourth & Above Owner	160	2.02378%
+First Owner	5215	65.9626%
+Third Owner	510	6.4508%
+Test Drive Car	5	0.0632431%
+
+
+
+owner	count
+Second Owner	490
+Third Owner	135
+First Owner	1326
+Fourth & Above Owner	49
+
+
+
+fuel	|carssold(Y/N)	|Count	|Percentage
+LPG	|Y	|6	|0.07589172780166961
+LPG	|N	|29	|0.3668100177080698
+Petrol	|N	|2585	|32.696686061219324
+Petrol	|Y	|935	|11.826460915760183
+Diesel	|Y	|1052	|13.30634960789274
+Diesel	|N	|3247	|41.07007336200354
+CNG	|Y	|7	|0.08854034910194788
+CNG	|N	|45	|0.5691879585125221
+
+
+
+owner	|carssold(Y/N)	|Count	|Percentage
+Second Owner	|N	|1526	|19.30179610422464
+Second Owner	|Y	|490	|6.197824437136352
+Third Owner	|Y	|135	|1.7075638755375666
+Third Owner	|N	|375	|4.743232987604351
+Fourth & Above Owner	|Y	|49	|0.6197824437136352
+Fourth & Above Owner	|N	|111	|1.403996964330888
+First Owner	|Y	|1326	|16.772071844168984
+First Owner	|N	|3889	|49.190488236782194
+Test Drive Car	|N	|5	|0.06324310650139134
+
+Process finished with exit code 0
