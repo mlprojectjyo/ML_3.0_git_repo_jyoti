@@ -99,7 +99,7 @@ df_year_diff.show()
 
 # In[13]:
 
-# df_year_diff.write.mode('overwrite').parquet("s3://ml-3-s3-bucket-jyoti/curateddata/spark/car_analysis.parquet")
-df_year_diff.write.mode('overwrite').parquet("/home/ec2-user/SageMaker/ML_3.0_git_repo_jyoti/car_analysis.parquet")
+df_year_diff.write.mode('overwrite').parquet("s3://ml-3-s3-bucket-jyoti/curateddata/spark/car_analysis.parquet")
+# df_year_diff.write.mode('overwrite').parquet("/home/ec2-user/SageMaker/ML_3.0_git_repo_jyoti/car_analysis.parquet")
 
 # In[ ]:
