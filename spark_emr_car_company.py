@@ -41,7 +41,7 @@ spark_df.printSchema()
 
 # In[4]:
 
-display(spark_df)
+# display(spark_df)
 
 # In[5]:
 
